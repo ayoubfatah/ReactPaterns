@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "react paterns ",
-  description: " learning react paters and design paterns",
+  description: " learning react patterns  and design patterns",
 };
 
 export default function RootLayout({

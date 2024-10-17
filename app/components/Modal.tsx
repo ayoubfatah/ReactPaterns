@@ -50,11 +50,13 @@ export function Open({
 }
 
 export function Window({
+  render,
   children,
   name,
 }: {
   children: React.ReactElement;
   name: string;
+  render: any;
 }) {
   const context = useContext(ModalContext);
 

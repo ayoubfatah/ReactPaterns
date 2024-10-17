@@ -1,5 +1,7 @@
 import React from "react";
 import RecursiveComponent from "./Recusrive";
+import { RedButton, GreenSmallButton } from "./composition";
+import { BlueButtonPartial } from "./Partial";
 
 const myNestedObject = {
   key1: "value1 ",
@@ -14,5 +16,15 @@ const myNestedObject = {
 };
 
 export default function () {
-  return <RecursiveComponent data={myNestedObject} />;
+  return (
+    <>
+      <RecursiveComponent data={myNestedObject} />
+      {/* Composition */}
+      <RedButton text="red" />
+      <RedButton text=" small red" size="small" />
+
+      <GreenSmallButton text="small green" />
+      <BlueButtonPartial text="this is blue" />
+    </>
+  );
 }

@@ -5,6 +5,9 @@ export default function Home() {
     <div className=" bg-slate-950 text-white text-3xl font-bold h-lvh flex justify-center gap-20 items-center flex-col">
       <Link href="/layoutComponents">layoutComponents</Link>
       <Link href="/HOC">HOC</Link>
+      <Link href="/rescursivePartialComposition">
+        rescursivePartialComposition
+      </Link>
     </div>
   );
 }

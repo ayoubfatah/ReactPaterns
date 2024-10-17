@@ -1,3 +1,4 @@
+"use client ";
 import { Modal, Open, Window } from "../../components/Modal";
 
 export default function page() {
@@ -18,7 +19,7 @@ export default function page() {
         <Open opens="jjj">
           <button>open list </button>
         </Open>
-        <Window name="jjj">
+        <Window name="jjj" render={() => {}}>
           <Content />
         </Window>
       </Modal>
